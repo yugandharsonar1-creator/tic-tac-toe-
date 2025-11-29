@@ -1,0 +1,27 @@
+:root{
+  --bg:#f7f7fb;
+  --card:#ffffff;
+  --accent:#2b7a78;
+  --x-color:#e85d5d;
+  --o-color:#4a90e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg); color:#222; display:flex; align-items:center; justify-content:center; min-height:100vh;
+}
+main{width:360px; background:var(--card); padding:20px; border-radius:12px; box-shadow:0 6px 20px rgba(30,30,30,0.08);}
+h1{margin:0 0 8px;font-size:18px}
+.explain{margin:0 0 12px;color:#666;font-size:13px}
+#status{margin-bottom:10px;font-weight:600}
+.board{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+.cell{aspect-ratio:1/1; background:#fafafa; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:42px; cursor:pointer; user-select:none; box-shadow:inset 0 -2px 0 rgba(0,0,0,0.03)}
+.cell.empty:hover{background:#f0f8ff}
+.cell.x{color:var(--x-color)}
+.cell.o{color:var(--o-color)}
+.controls{margin-top:12px; display:flex; gap:8px}
+button{background:var(--accent); color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer}
+button:active{transform:translateY(1px)}
+.message{margin-top:12px;color:#333; font-weight:600}
+
+@media (max-width:420px){main{width:92vw}}

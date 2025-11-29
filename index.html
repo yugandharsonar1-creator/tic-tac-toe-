@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic Tac Toe — 3-mark Cycling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Tic Tac Toe — 3-mark Cycling</h1>
+      <p class="explain">Each player can have at most three marks on the board. Placing a fourth removes the player's oldest mark.</p>
+      <div id="status">Turn: <span id="currentPlayer">X</span></div>
+      <div id="board" class="board" aria-label="Tic tac toe board">
+        <!-- 9 cells created by script -->
+      </div>
+      <div class="controls">
+        <button id="resetBtn">Reset</button>
+      </div>
+      <div id="message" class="message" aria-live="polite"></div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
